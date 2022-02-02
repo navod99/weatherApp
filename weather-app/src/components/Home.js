@@ -2,12 +2,9 @@ import React, { useEffect, useState } from "react";
 import cities from "../asserts/data/cities.json";
 import axios from "axios";
 import Showcase from "./Showcase";
-import bgImg from "../asserts/images/bg2.jpg";
 import Footer from "./Footer";
 
-
 const Home = () => {
-
 
     const [cityList, setCityList] = useState([]);
     const [newCityList, setNewCityList] = useState([]);
