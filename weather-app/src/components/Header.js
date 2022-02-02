@@ -12,6 +12,7 @@ import SearchIcon from '@material-ui/icons/Search';
 const useStyles = makeStyles((theme) => ({
     grow: {
         flexGrow: 1,
+        marginBottom:50
     },
     menuButton: {
         marginRight: theme.spacing(2),

@@ -1,5 +1,5 @@
 .App {
- 
+ text-align: center;
 }
 
 .App-logo {
@@ -15,4 +15,16 @@
   width: 100%;
   z-index: -1;
   object-fit: cover !important;
+}
+
+.footer {
+  background-color: #3F51B5;
+
+  color: whitesmoke;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
 }
