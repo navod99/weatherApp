@@ -76,8 +76,8 @@ const Showcase = ({ newCityList }) => {
                             </CardActionArea>
                             <Paper className={classes.paper2}>
                             <CardActions >
-                                <Grid style={{marginLeft:"20px"}} container spacing={3}>
-                                    <Grid item xs={12} sm={6}>
+                                <Grid  container spacing={3}>
+                                    <Grid item xs={12} sm={8} >
                                         <ListItem>
                                             <ListItemAvatar>
                                                 <Avatar>
@@ -89,7 +89,7 @@ const Showcase = ({ newCityList }) => {
                                             )} />
                                         </ListItem>
                                     </Grid>
-                                    <Grid item xs={12} sm={6}>
+                                    <Grid item xs={12} sm={4}>
                                         <ListItem >
                                             <ListItemAvatar>
                                                 <Avatar>
@@ -101,7 +101,7 @@ const Showcase = ({ newCityList }) => {
                                     </Grid>
                                 
                                 
-                                    <Grid item xs={12} sm={6}>
+                                    <Grid item xs={12} sm={8}>
                                         <ListItem>
                                             <ListItemAvatar>
                                                 <Avatar>
@@ -111,7 +111,7 @@ const Showcase = ({ newCityList }) => {
                                             <ListItemText primary={city.wind.speed} secondary="Wind" />
                                         </ListItem>
                                     </Grid>
-                                    <Grid item xs={12} sm={6}>
+                                    <Grid item xs={12} sm={4}>
                                         <ListItem>
                                             <ListItemAvatar>
                                                 <Avatar>

@@ -19,7 +19,7 @@ const Updatedtime=({city})=> {
     
   return( 
   <div>
-      Updated At : {formattedTime}
+      Updated Time : {formattedTime}
 
   </div>
     

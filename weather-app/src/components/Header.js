@@ -7,12 +7,10 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
 
-
-
 const useStyles = makeStyles((theme) => ({
     grow: {
         flexGrow: 1,
-        marginBottom:50
+        marginBottom: 50
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -62,15 +60,14 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 
-
 }));
 
-const Header=()=> {
+const Header = () => {
     const classes = useStyles();
-  return( 
-  
-  <div className={classes.grow}>
-       <AppBar position="static">
+    return (
+
+        <div className={classes.grow}>
+            <AppBar position="static">
                 <Toolbar>
                     <IconButton
                         edge="start"
@@ -78,9 +75,9 @@ const Header=()=> {
                         color="inherit"
                         aria-label="open drawer"
                     >
-                         <img src='/weather.png' height='40' />
+                        <img src='/weather.png' height='40' />
                     </IconButton>
-             
+
                     <Typography className={classes.title} variant="h6" noWrap>
                         Weather App
                     </Typography>
@@ -95,22 +92,15 @@ const Header=()=> {
                                 input: classes.inputInput,
                             }}
                             inputProps={{ 'aria-label': 'search' }}
-                            // value={query}
-                            // onChange={(e)=>{setQuery(e.target.value)}}
-                            // onKeyPress={search}
 
                         />
                     </div>
-                    
-                   
-                  
 
                 </Toolbar>
             </AppBar>
 
-
-  </div>
-  );
+        </div>
+    );
 }
 
 export default Header;
