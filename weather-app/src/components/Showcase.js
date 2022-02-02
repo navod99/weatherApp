@@ -93,7 +93,7 @@ const Showcase = ({ newCityList }) => {
                                                     <img src={humidity} alt='humidity' />
                                                 </Avatar>
                                             </ListItemAvatar>
-                                            <ListItemText primary={city.main.humidity} secondary="Humidity" />
+                                            <ListItemText primary={<div>{city.main.humidity}%</div>} secondary="Humidity" />
                                         </ListItem>
                                     </Grid>
                                 
@@ -105,7 +105,7 @@ const Showcase = ({ newCityList }) => {
                                                     <img src={wind} alt='wind' />
                                                 </Avatar>
                                             </ListItemAvatar>
-                                            <ListItemText primary={city.wind.speed} secondary="Wind" />
+                                            <ListItemText primary={<div>{city.wind.speed} km/h</div>} secondary="Wind" />
                                         </ListItem>
                                     </Grid>
                                     <Grid item xs={12} sm={4}>
@@ -115,7 +115,7 @@ const Showcase = ({ newCityList }) => {
                                                     <img src={pressure} alt='pressure' />
                                                 </Avatar>
                                             </ListItemAvatar>
-                                            <ListItemText primary={city.main.pressure} secondary="Pressure" />
+                                            <ListItemText primary={<div>{city.main.pressure}hpa</div>} secondary="Pressure" />
                                         </ListItem>
                                     </Grid>
                                 </Grid>
